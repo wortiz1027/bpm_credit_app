@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:organization xmlns:ns0="http://xmlns.oracle.com/bpm/organization" xmlns:ns1="http://xmlns.oracle.com/bpm/lpg/peopleQuery" xmlns:ns2="http://xmlns.oracle.com/bpm/identity" xmlns:ns3="http://xmlns.oracle.com/bpel/workflow/taskQuery" xmlns:ns4="http://xmlns.oracle.com/bpel/workflow/task">
+   <ns0:updateExistingObjects>false</ns0:updateExistingObjects>
+   <ns0:organizationalUnits/>
+   <ns0:applicationRoles>
+      <ns0:applicationRole id="bpm_credit_process.ProcessOwner" isProcessRole="true">
+         <ns2:name>bpm_credit_process.Process Owner</ns2:name>
+         <ns0:processRole id="ProcessOwner" name="Process Owner"/>
+      </ns0:applicationRole>
+      <ns0:applicationRole id="bpm_credit_process.ProcessReviewer" isProcessRole="true">
+         <ns2:name>bpm_credit_process.Process Reviewer</ns2:name>
+         <ns0:processRole id="ProcessReviewer" name="Process Reviewer"/>
+      </ns0:applicationRole>
+      <ns0:applicationRole id="bpm_credit_process.Radicador" isProcessRole="true">
+         <ns2:name>bpm_credit_process.Radicador</ns2:name>
+         <ns0:processRole id="Radicador" name="Radicador"/>
+      </ns0:applicationRole>
+      <ns0:applicationRole id="bpm_credit_process.Aprobador" isProcessRole="true">
+         <ns2:name>bpm_credit_process.Aprobador</ns2:name>
+         <ns0:processRole id="Aprobador" name="Aprobador"/>
+      </ns0:applicationRole>
+   </ns0:applicationRoles>
+   <ns0:applicationRoleOrgUnitCalendarAssociations/>
+   <ns0:participantPropertiesList/>
+   <ns0:holidayRules/>
+   <ns0:calendarRules/>
+   <ns0:businessParameters/>
+</ns0:organization>

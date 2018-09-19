@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="12.1.3" fileRevision="20120601"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+   <component name="CreditProcess">
+      <topicDocumentations>
+         <topicDocumentation name="CreditProcess">
+            <labels>
+               <label locale="en">Credit_process</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Proceso bpm que implementa un flujo de aprobacion de credito para una solicitud de un cliente</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23573548918182">
+            <labels>
+               <label locale="en">Generar Solicitud</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23573551948367">
+            <labels>
+               <label locale="en">Radicar Solicitud</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23573556826796">
+            <labels>
+               <label locale="en">Determinar Tipo Aprobacion</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23573568044677">
+            <labels>
+               <label locale="en">Aprobacion Manual</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23573577900760">
+            <labels>
+               <label locale="en">Aprobacion Automatica</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23573521163494">
+            <labels>
+               <label locale="en">Inicio Aprobacion Solicitud</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23573521163597">
+            <labels>
+               <label locale="en">Fin Aprobacion Automatica</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW23573564354287">
+            <labels>
+               <label locale="en">¿Manual o Automatica?</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW23573603773959">
+            <labels>
+               <label locale="en">¿Aprobacion Exitosa?</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23573609554785">
+            <labels>
+               <label locale="en">Aprobacion Financiera</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW2357361420233">
+            <labels>
+               <label locale="en">¿Aprobacion Financiera Exitosa?</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW2357362480048">
+            <labels>
+               <label locale="en">Desembolso/Notificacion</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW2357362609335">
+            <labels>
+               <label locale="en">.</label>
+            </labels>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23573630596172">
+            <labels>
+               <label locale="en">Desembolso</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23573635484113">
+            <labels>
+               <label locale="en">Notificar</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23573650474336">
+            <labels>
+               <label locale="en">Fin Aprobacion Manual</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf2357352116358"/>
+         <topicDocumentation name="sf23573551270310"/>
+         <topicDocumentation name="sf23573555427097"/>
+         <topicDocumentation name="sf23573561700647"/>
+         <topicDocumentation name="sf23573566534937"/>
+         <topicDocumentation name="sf23573574417491"/>
+         <topicDocumentation name="sf23573581879182"/>
+         <topicDocumentation name="sf23573583793981"/>
+         <topicDocumentation name="sf23573605627894"/>
+         <topicDocumentation name="sf23573612625021"/>
+         <topicDocumentation name="sf23573616821562"/>
+         <topicDocumentation name="sf23573619743337"/>
+         <topicDocumentation name="sf23573626093370">
+            <labels>
+               <label locale="en"></label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23573628095095"/>
+         <topicDocumentation name="sf23573632825867"/>
+         <topicDocumentation name="sf23573633439010"/>
+         <topicDocumentation name="sf23573636622934"/>
+         <topicDocumentation name="sf23573655559887"/>
+      </topicDocumentations>
+   </component>
+</processDocumentation>
