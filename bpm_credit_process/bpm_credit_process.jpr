@@ -219,6 +219,9 @@
          <string v="bpm_credit_process"/>
       </list>
    </hash>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <url n="pomfileURL" path="pom.xml"/>
+   </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <value n="j2eeWebAppName" v="bpm_credit_app-bpm_credit_process-webapp"/>
       <value n="j2eeWebContextRoot" v="bpm_credit_app-bpm_credit_process-context-root"/>
