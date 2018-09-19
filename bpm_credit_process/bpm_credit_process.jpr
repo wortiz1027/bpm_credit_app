@@ -90,6 +90,8 @@
       <list n="technologyScope">
          <string v="BPM"/>
          <string v="SOA"/>
+         <string v="XML"/>
+         <string v="XML_SCHEMA"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
@@ -218,6 +220,9 @@
       <list n="profileList">
          <string v="bpm_credit_process"/>
       </list>
+   </hash>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <url n="pomfileURL" path="pom.xml"/>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <value n="j2eeWebAppName" v="bpm_credit_app-bpm_credit_process-webapp"/>
