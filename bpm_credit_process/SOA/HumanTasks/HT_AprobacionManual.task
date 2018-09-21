@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <taskDefinition targetNamespace="http://xmlns.oracle.com/bpm_credit_app/bpm_credit_process/HT_AprobacionManual" xmlns:xp20="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.Xpath20" xmlns:ora="http://schemas.oracle.com/xpath/extension" xmlns:oraext="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.ExtFunc" xmlns:task="http://xmlns.oracle.com/bpel/workflow/task" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://xmlns.oracle.com/bpel/workflow/taskDefinition" xmlns:bpm="http://xmlns.oracle.com/bpmn20/extensions"
-                xmlns:ns0="http://www.credit.com/co/com/credit"
-                xmlns:ns1="http://xmlns.oracle.com/bpm/bpmobject/Credit/BO_Acciones">
+                xmlns:ns1="http://xmlns.oracle.com/bpm/bpmobject/Credit/BO_Acciones"
+                xmlns:ns0="http://www.credit.com/co/com/credit">
    <name>HT_AprobacionManual</name>
    <id>${domain_id}_${process_id}_${process_revision}_HT_AprobacionManual</id>
    <title type="STATIC"><value>Aprobacion Manual</value></title>
