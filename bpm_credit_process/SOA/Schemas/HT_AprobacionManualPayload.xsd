@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema targetNamespace="http://xmlns.oracle.com/bpel/workflow/task" xmlns:tns="http://xmlns.oracle.com/bpel/workflow/task" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://xmlns.oracle.com/bpm/bpmobject/Credit/BO_Acciones" xmlns:ns0="http://www.credit.com/co/com/credit">
+   <import namespace="http://www.credit.com/co/com/credit" schemaLocation="co/com/credit/credit_process_objects.xsd"/>
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/Credit/BO_Acciones" schemaLocation="../businessCatalog/Credit/BO_Acciones.xsd"/>
+   <complexType name="HT_AprobacionManualPayloadType">
+      <sequence>
+         <element name="cliente" type="ns0:tCliente"/>
+         <element name="solicitud" type="ns0:tSolicitud"/>
+         <element name="acciones" type="ns1:BO_AccionesType"/>
+      </sequence>
+   </complexType>
+</schema>
