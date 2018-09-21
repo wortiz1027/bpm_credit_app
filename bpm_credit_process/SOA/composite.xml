@@ -13,6 +13,8 @@
            xmlns:sca-ext="http://xmlns.oracle.com/sca/1.0-ext">
   <import namespace="http://xmlns.oracle.com/bpmn/bpmnProcess/CreditProcess" location="WSDLs/CreditProcess.wsdl"
           importType="wsdl"/>
+  <import namespace="http://xmlns.oracle.com/bpel/workflow/taskService"
+          location="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl" importType="wsdl"/>
   <service name="CreditProcess.service" ui:wsdlLocation="WSDLs/CreditProcess.wsdl">
     <interface.wsdl interface="http://xmlns.oracle.com/bpmn/bpmnProcess/CreditProcess#wsdl.interface(CreditProcessPortType)"
                     callbackInterface="http://xmlns.oracle.com/bpmn/bpmnProcess/CreditProcess#wsdl.interface(CreditProcessPortTypeCallBack)"/>
@@ -31,8 +33,44 @@
                         callbackInterface="http://xmlns.oracle.com/bpmn/bpmnProcess/CreditProcess#wsdl.interface(CreditProcessPortTypeCallBack)"/>
         <property name="bpm.generated.service.reference" type="xs:string" many="false">CreditProcess.service</property>
       </service>
+      <reference name="HumanTasks.HT_AprobacionManual.reference"
+                 ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                        callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </reference>
+      <reference name="HumanTasks.HT_AprobacionFinanciera.reference"
+                 ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                        callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </reference>
     </componentType>
   </component>
+  <component name="HT_AprobacionManual">
+    <implementation.workflow src="HumanTasks/HT_AprobacionManual.task"/>
+    <componentType>
+      <service name="TaskService" ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                        callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </service>
+    </componentType>
+  </component>
+  <component name="HT_AprobacionFinanciera">
+    <implementation.workflow src="HumanTasks/HT_AprobacionFinanciera.task"/>
+    <componentType>
+      <service name="TaskService" ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                        callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </service>
+    </componentType>
+  </component>
+  <wire>
+    <source.uri>CreditProcess/HumanTasks.HT_AprobacionManual.reference</source.uri>
+    <target.uri>HT_AprobacionManual/TaskService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>CreditProcess/HumanTasks.HT_AprobacionFinanciera.reference</source.uri>
+    <target.uri>HT_AprobacionFinanciera/TaskService</target.uri>
+  </wire>
   <wire>
     <source.uri>CreditProcess.service</source.uri>
     <target.uri>CreditProcess/CreditProcess.service</target.uri>
